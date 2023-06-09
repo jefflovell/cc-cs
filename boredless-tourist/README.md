@@ -96,7 +96,6 @@ INTRO TO PROGRAMMING
     attractions = [[], [], [], [], []]
     ```
     But there are other ways to accomplish the same thing: by looping through destinations or with a list comprehension.
-
     Define attractions to be a list of `5` (one for each test destination) empty lists using a loop or list comprehension.
 
 26. Print out your attractions. Save, and then run your code by typing `python3 script.py` in the terminal.
@@ -132,9 +131,11 @@ INTRO TO PROGRAMMING
 
 34. Print out attractions. Then save and run your code with `python3 script.py`. 
     Your print statement should render the following:
-  
-    `[[], [], [['Venice Beach', ['beach']]], [], []]`
-
+    
+    ```python
+    [[], [], [['Venice Beach', ['beach']]], [], []]`
+    ```
+    
     If it doesn’t something went wrong with `add_attraction()`.
 
 35. Let’s add a few more interesting places to go, paste the following code to add a few more attractions:
@@ -155,8 +156,10 @@ INTRO TO PROGRAMMING
 36. Let’s add this change to our git repo. First add `script.py` to your git index.
 
 37. Then commit the changes with the message
-
-    `"Created attractions and functionality for adding new attractions"`
+    
+    ```python
+    "Created attractions and functionality for adding new attractions"
+    ```
 
 ### Finding the Best Places to Go
 38. We want to be able to help our travelers find the most interesting places in a new city for them. 
@@ -194,8 +197,10 @@ INTRO TO PROGRAMMING
 48. Print out `la_arts`.
     Save, and run your code by typing `python3 script.py` in the terminal. 
     It should have returned the following:
-  
-    `[['LACMA', ['art', 'museum']]]`
+    
+    ```python
+    [['LACMA', ['art', 'museum']]]
+    ```
 
 49. We don’t want to show the tags to our users when we recommend things to them, so let’s just append the name of each attraction.
     In the body of `find_attractions()`, find where you append `possible_attraction` to `attractions_with_interest`.
@@ -204,7 +209,9 @@ INTRO TO PROGRAMMING
 50. Save and try rerunning your `la_arts` test code with `python3 script.py`. 
     Printing it now should just print the following:
 
-    `['LACMA']`
+    ```python
+    ['LACMA']
+    ```
     
 51. Looks like we’ve got an interest finder! 
     Let’s save these changes to our git repo! 
@@ -239,10 +246,13 @@ INTRO TO PROGRAMMING
 58. We’ll want to add a little more to the `interests_string` before we list the interests. Add the following:
 
     This string:
+    
     ```python
     ", we think you'll like these places around "
     ```
+    
     The place
+    
 59. Lastly, we want to add the names of the places to go!  
     Loop through `traveler_attractions` and for every attraction in the list concatenate that attraction to `interests_string`.
     You can add commas and spaces to interests_string to make it more legible as well.
@@ -258,12 +268,12 @@ INTRO TO PROGRAMMING
     Save the results of `get_attractions_for_traveler()` into the variable `smills_france`.
 
 62. Print out `smills_france`. 
-  Save your work and run it by typing `python3 script.py` in the terminal
-  You should get a string that looks like the following:
-  
-  ```python
-  "Hi Dereck Smill, we think you'll like these places around Paris, France: the Arc de Triomphe"
-  ```
+    Save your work and run it by typing `python3 script.py` in the terminal
+    You should get a string that looks like the following:
+
+    ```python
+    "Hi Dereck Smill, we think you'll like these places around Paris, France: the Arc de Triomphe"
+    ```
 
 63. Looks great! Let’s add it to our git repository! First `git add script.py`.
 
